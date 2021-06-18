@@ -1,0 +1,373 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body h2{
+    background: antiquewhite;
+    font-size: 25px; 
+    font-family:'Times New Roman'; 
+    color: darkviolet;
+    padding: auto;
+    border: 3px solid darkblue;
+}
+
+header, .main, footer{
+    background: #fff;
+    width: 100%;
+    max-width: 1300px;
+    margin: 10px auto;
+}
+
+header nav{
+    width: 100px;
+    width:50%;
+    max-width:400px;
+    border: 5px blue outset;
+    margin: auto;
+    top:100px;
+}
+
+header nav a{
+    padding: 10px 20px;
+    display:block;
+    color:#fff;
+    text-decoration:none;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header{
+    background-image: url('../img/portadanenas.jpg');
+    height:600px;
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-attachment: cover;
+}
+header .menu{
+    margin:35px 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+header .menu a{
+    font-size:20px;
+    font-family: 'lato';
+    font-weight: 1000;
+    display: inline-block;
+    padding:5px 0;
+    margin:0 30px;
+    color:black;
+    text-decoration: none;
+}
+header .contenido-header{
+    margin:120px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+header .contenido-header .titulo-header{
+    font-size: 110px;
+    text-align: center;
+    color: fuchsia;
+    text-align: center;
+    font-family: 'Times New Roman';
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+header .contenido-header .linea-header{
+    width: 700px;
+    margin: auto;
+    height:2px;
+    background: #15a4fa;
+    margin-bottom:30px;
+    text-align: center;
+}
+
+header .contenido-header .texto-header{
+    color:orchid;
+    font-weight: 350;
+    margin-bottom:40px;
+    font-size:45px;
+    text-align: center;
+    font-family: harrington;
+    font-weight: bold;
+}
+
+header .contenido-header .action-header{
+    display: inline-block;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid darkblue;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+header .contenido-header .action-header:hover{
+    background: darkblue;
+    color: #fff;
+}
+
+.main .articles {
+    width: 65.5%;
+    margin-right:1.5%;
+    width: 70%;
+    display: inline-block;
+    font-size: 15px;
+    padding: 20px;
+    
+}
+.main .articles article{
+   padding:10px;
+   background-color: slateblue;
+   color: white;
+   margin-bottom:10px;
+   font-family: Georgia;
+}
+
+main .quienes{
+    background: #f0f3f5;
+    padding:60px 0;
+}
+
+main .quienes .quienes-titulo{
+    color:#000;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+main .quienes .quienes-parrafo{
+    text-align: center;
+    color:#999999;
+    font-weight: 600;
+}
+
+main .quehacemos{
+    margin:60px 0;
+}
+main .contenido-cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .quehacemos .contenido-cajas .tarjeta{
+    width: 30%;
+    text-align: center;
+}
+
+main .quehacemos .contenido-cajas .tarjeta .contenido-tarjeta .titulo-tarjeta{
+    margin:10px 0;
+}
+
+main .portafolio{
+    background: #f0f3f5;
+    padding: 30px;
+}
+
+main .portafolio .portafolio-textos{
+    text-align: center;
+    margin-bottom: 60px;
+    color:#2d3950;
+    font-size: 20px;
+}
+
+main .portafolio .portafolio-textos p{
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+main .portafolio .galeria{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+} 
+
+main .portafolio .galeria .fotos{
+    width: 25%;
+    margin-bottom:20px; 
+}
+
+main .portafolio .galeria .fotos img{
+    width: 95%;
+    height:300px;
+    border-radius: 10px;
+}
+
+main .portafolio .galeria .fotos img:hover{
+    opacity:.6;
+    cursor: pointer;
+}
+
+footer .contacto{
+    height:600px;
+    background-image: url(../img/footer1.jpg);
+    background-position:center;
+    padding:60px 0;
+}
+
+aside{
+    width:30%;
+    background:plum;
+    float:left;
+    padding:40px;
+    box-sizing:border-box;
+    margin: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 25px;
+    float: left;
+    height: 100%;
+    font-family: lato;
+}
+
+footer{
+    background-color:#f0df60c6;
+    color:black;
+    clear:both;
+    padding:10px;
+    text-align:center;
+    font-weight: bold;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+} 
+
+footer .footer-textos{
+    text-align: center;
+    color: rgba(28, 241, 248, 0.946);
+    font-size:25px;
+}
+
+footer .footer-textos p{
+    font-size: 20px;
+    margin:25px 0 30px 0;
+    color: powderblue;
+
+}
+
+footer .contacto input[type="text"], footer .contacto input[type="email"],
+footer .contacto textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 15px 20px;
+    background: none;
+    border-radius: 5px;
+    color:rgb(33, 230, 210);
+    border: 2px solid rgba(208, 228, 33, 0.809);
+    font-family: 'lato';
+    font-weight: 300;
+    text-transform: none;
+}
+
+footer .contacto textarea{
+    height:150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+.derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+footer .contacto input[type="submit"]{
+    display:block;
+    width: 100px;
+    margin:10px 0;
+    padding: 10px 15px;
+    background: none;
+    border:2px solid #f3d10f;
+    border-radius: 5px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+}
+footer .contacto input[type="submit"]:hover{
+    background: #15a4fa;
+    color: #fff;
+}
+
+.footer{
+    height:200px;
+    background: #000;
+}
+
+@media screen and (max-width:760px){
+    header .menu{
+        justify-content: center;
+    }
+    header .contenido-header .texto-header{
+        font-size:18px;
+    }
+    header .contenido-header .texto-header .desaparecer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:630px){
+    header .contenido-header .titulo-header{
+        font-size:80px;
+    }
+    header .contenido-header .linea-header{
+        width: 400px;
+    }
+    main .portafolio .galeria .fotos{
+        width:49%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenido-header .titulo-header{
+        font-size:40px;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 48%;
+    }
+    main .contenido-cajas{
+        justify-content: center;
+    }
+    main .quehacemos .contenido-cajas .tarjeta{
+        margin:20px 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    main .quehacemos .contenido-cajas .tarjeta{
+        width: 98%;
+    }
+    header .contenido-header .texto-header{
+        font-size:15px;
+    }
+}
